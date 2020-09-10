@@ -33,7 +33,7 @@ def create_tables():
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 hostname = 'localhost'
 username = 'postgres'
-password = 'maadurga7'
+password = '********'
 database = 'trial'
 syd1=""
 stud=""
@@ -178,7 +178,7 @@ def mailkro():
 
 
 		gmail_user = 'arpanghoshal77@gmail.com'  
-		gmail_password = 'maadurga7'
+		gmail_password = '********'
 		
 		northemail = 'arpanghoshal@outlook.com'
 		southemail = 'arpanghoshal.z@gmail.com'
