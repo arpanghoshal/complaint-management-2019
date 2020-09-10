@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+
+ .login-form {
+        width: 340px;
+        margin: 50px auto;
+  }
+    .login-form form {
+        margin-bottom: 15px;
+        background:  #dfe3ee;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        padding: 30px;
+    }
+    .login-form h2 {
+        margin: 0 0 15px;
+    }
+    .form-control,.btn{
+        min-height: 38px;
+        border-radius: 2px;
+    }
+    .btn {        
+        font-size: 15px;
+        font-weight: bold;
+        background-color: #3b5998; 
+        color: #f7f7f7;
+    }
+
+	.srch{
+		    float: right !important;
+	}
+	.panel{
+		width: 1000px;
+		height: 600px;
+		margin:auto;
+		background-color:  #cdd3e5;
+	}
+	.navbar{
+		border-radius: 0px !important;background-color:#3b5998; border: 0px !important;
+	}
+
+	.img-responsive{
+		border-radius: 5px
+	}
+	.btn-bs-file{
+    position:relative;
+}
+.btn-bs-file input[type="file"]{
+    position: absolute;
+    top: -9999999;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    width:0;
+    height:0;
+    outline: none;
+    cursor: inherit;
+}
+	
+	body{background-color: 	#dfe3ee; font-size: 15px;}
+</style>
+</head>
+
+<body>
+
+
+	<nav class="navbar navbar-inverse">
+  		<div class="container-fluid">
+    		<div class="navbar-header">
+      			<a class="navbar-brand" href="home.html" style="color: #f7f7f7">Complaint Management</a>
+    		</div>
+    		
+            <ul class="nav navbar-nav">
+      			<li><a href="http://127.0.0.1:5000/bar" style="color: #f7f7f7">Graphs</a></li>
+      			<li><a href="http://127.0.0.1:5000/complaints" style="color: #f7f7f7">Complaint Tables</a></li>
+      			<li><a href="http://127.0.0.1:5000/client" style="color: #f7f7f7">Register complaint</a></li>
+    		</ul>
+   
+        <ul class="nav navbar-nav navbar-right">
+
+          <li><a href="logout.hmtl" style="color: #f7f7f7"><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
+
+        </ul>
+ 
+        <ul class="nav navbar-nav navbar-right">
+
+          <li><a href="register" style="color: #f7f7f7"><span class="glyphicon glyphicon-user"></span>Register</a></li>
+          <li><a href="login" style="color: #f7f7f7"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+
+        </ul>
+  
+
+  		</div>
+	</nav>
+  		<h2 align="center">Login to continue</h2>
+    
+  		<div class="panel panel-default">
+  			<div class="panel-body">
+
+                <div class="login-form">
+    <form  method="post" action="/checkuser">
+   
+        <h2 align="center">Log in</h2>       
+        <div class="form-group">
+            <input type="text" class="form-control" name="username" placeholder="Username" required="required">
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-block" style="">Log in</button>
+        </div>    
+        <div class="clearfix pull-right">
+            or <a href="register.html" >create an account</a>
+        </div>    
+    </form>
+</div>
+                
+
+
+</body>
+</html>
